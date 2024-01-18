@@ -175,13 +175,17 @@ img{
     background-image: linear-gradient(to bottom, transparent 50%, var(--primario) 0%), url(../img/imagen-mujer.avif);
     background-position: right;
     background-repeat: repeat, no-repeat;
-    background-size: 100%, 110rem;
+    background-size: 105%, 110rem;
+    padding: 7rem 0;
+    line-height: 1;
 }
 
 @media (min-width: 768px) { 
     .sobre-tech{
         background-image: linear-gradient(to left, transparent 50%, var(--primario) 0%), url(../img/imagen-mujer.avif);
         background-repeat: repeat, no-repeat;
+        padding: 0;
+        line-height: 0;
     } 
 }
 
@@ -214,6 +218,11 @@ img{
     flex-direction: column;
     justify-content: space-around;
     padding-bottom: var(--separacion);
+}
+
+.texto-sobre-tech p{
+    margin-bottom: 5rem;
+    
 }
 
 @media (min-width: 768px) { 
@@ -281,9 +290,16 @@ img{
     cursor: pointer;
 }
 
+@media (min-width: 768px) { 
+    .modelo:hover{
+        transform: scale(1.1);
+        background-size: 30rem;
+    }
+}
+
 .modelo:hover{
     transform: scale(1.1);
-    background-size: 30rem;
+    background-size: 17rem;
 }
 
 @media (min-width: 992px) { 
@@ -410,6 +426,17 @@ img{
     cursor: pointer;
 }
 
+.footer{
+    margin-top: 5rem;
+    padding-top: 8rem;
+}
+
+@media (min-width: 768px) { 
+    .footer{
+        margin-top: 0;
+        padding-top: 0;
+    }
+}
 .footer p{
     font-family: var(--secundario);
     text-transform: uppercase;
