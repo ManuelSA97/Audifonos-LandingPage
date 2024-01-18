@@ -172,7 +172,7 @@ img{
 /** Sobre Tech **/
 
 .sobre-tech{
-    background-image: linear-gradient(to bottom, transparent 50%, var(--primario) 0%), url(../img/imagen-mujer.jpg);
+    background-image: linear-gradient(to bottom, transparent 50%, var(--primario) 0%), url(../img/imagen-mujer.avif);
     background-position: right;
     background-repeat: repeat, no-repeat;
     background-size: 100%, 110rem;
@@ -180,7 +180,7 @@ img{
 
 @media (min-width: 768px) { 
     .sobre-tech{
-        background-image: linear-gradient(to left, transparent 50%, var(--primario) 0%), url(../img/imagen-mujer.jpg);
+        background-image: linear-gradient(to left, transparent 50%, var(--primario) 0%), url(../img/imagen-mujer.avif);
         background-repeat: repeat, no-repeat;
     } 
 }
@@ -339,7 +339,8 @@ img{
 /** Newsletter **/
 
 .newsletter{
-    background-image: linear-gradient(to bottom, transparent 50%, var(--blanco) 0%), url(/img/newsletter.jpg);
+    margin-top: calc(var(--separacion) /2);
+    background-image: linear-gradient(to bottom, transparent 50%, var(--blanco) 0%), url(/img/newsletter.avif);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: 100%, 70rem;
@@ -347,18 +348,20 @@ img{
 
 @media (min-width: 768px) { 
     .newsletter{
-    background-image: linear-gradient(to right, transparent 50%, var(--blanco) 0%), url(/img/newsletter.jpg);
+    background-image: linear-gradient(to right, transparent 50%, var(--blanco) 0%), url(/img/newsletter.avif);
     background-position: center left;
     background-size: 100%, 75rem;
     padding: 10rem 0;
+    margin-top: 0;
     }
 }
 
 @media (min-width: 2200px) { 
     .newsletter{
-        background-image: linear-gradient(to right, transparent 50%, var(--blanco) 0%), url(/img/newsletter.jpg);
+        background-image: linear-gradient(to right, transparent 50%, var(--blanco) 0%), url(/img/newsletter.avif);
         background-position: center left;
         background-size: 100%, 160rem;
+        margin-top: calc(var(--separacion));
         }
 }
 
